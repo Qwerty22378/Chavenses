@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Canticum</title>
+
 </head>
-<body style="background-color:Beige">
+
+<style>
+    .main-grid{
+    width: 100vw;
+    height:100vw;
+    margin:5px;
+
+    display : grid;
+    grid-template-rows: 1fr 5fr;
+
+    background-color: beige;
+    place-items: center;
+    }
+
+    .front-cover{
+        width: 100%;
+        height:100%;
+        margin:5px;
+
+        display : grid;
+
+        background-color: beige;
+        place-items: center;
+    }
+
+    .front-cover-image{
+        width: clamp(100px,100%, 1000px);
+        height: auto;
+    }
 
 
-<header style="text-align:center">
-    <img src="Logo.png" width="450" height="275">
-</header>
+</style>
 
-<nav >
+<body class="main-grid">
+<div style="color:red">
+    <img src="images/Logo.png" alt="logo" class="front-cover-image">
+</div>
 
-    <h2 style="color:DarkOrange ; font-size:50px; font-family:CourierNew">
-        Quem somos?
-    </h2>
+<div>
 
-    <p style="font-size:25px; font-family:Arial">
-        A Canticum é aplicação destinada a simplificar e ao mesmo tempo melhorar a forma como se gere uma banda.
-    </p>
 
-    <h3 style="color:DarkOrange ; font-size:50px; font-family:CourierNew">
-        Objetivos da app
-    </h3>
+</div>
 
-</nav>
 </body>
 </html>
