@@ -4,183 +4,66 @@
     <meta charset="UTF-8">
     <title>Canticum</title>
     <link rel="icon" href="images/icon.png">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<style>
-    .main{
-        width: 100vw;
-        height:100vw;
-        margin:5px;
-
-        background-color:beige;
-    }
-
-    .front-cover{
-        width: 100%;
-        height: clamp(25%, 30%, 50%);
-        margin:5px auto;
-
-        display : grid;
-
-        background-color: beige;
-        place-items: center;
-    }
-
-    .front-cover-image{
-        position:center;
-        width: clamp(25%, 50%, 100%);
-        background-color: beige;
-    }
-
-    .page-content{
-        width: 100%;
-        height:100%;
-        margin:5px;
-    }
-
-    .description-text{
-        color:black;
-        font-size: clamp(2vw, 4vw, 5vw);
-        text-align:center;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a, .dropbtn {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
-    }
-
-    li.dropdown {
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {background-color: #f1f1f1;}
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    
-    .content-grid{
-        width:100%;
-        height:100%;
-        margin: 30 px;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        place-items: center;
-
-        background-color:white;
-
-    }
-
-    .footnote-grid{
-        width:100%;
-        height:100%;
-        margin: 30 px;
-
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        place-items: center;
-
-        background-color:black;
-    }
-
-
-
-</style>
 
 <body class="main">
 <div class="front-cover">
-    <img src="images/Logo.png" alt="logo" class="front-cover-image">
+    <img src="images/front-cover.png" alt="logo" class="front-cover-image">
 </div>
     <p class="description-text">
-        **insert SLOGAN insert**
+        A melhor gestão de bandas no mercado!
     </p>
 
     <ul>
-        <div class="dropdown">
+        <div>
             <li class="dropdown">
-                <a href="javascript:void" class="drop-btn">Button1</a>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+                <a href="javascript:void(0)" class="drop-btn">Gestão</a>
+                <div class="dropdown-content">
+                    <a href="gestao.html">Financeiro</a>
+                    <a href="gestao.html">Instrumentos</a>
+                    <a href="gestao.htmlcontacts">Marcação de presenças</a>
+                    <a href="gestao.html">Calendário</a>
+                </div>
             </li>
+
+            <li-second class="dropdown-second">
+                <a href="javascript:void(0)" class="drop-btn-second">Venda</a>
+                <div class="dropdown-content-second">
+                    <a href="gestao.html">Banda</a>
+                    <a href="gestao.html">Cliente</a>
+                    <a href="gestao.html">Samples</a>
+                    <a href="gestao.html">Orçamentos</a>
+                </div>
+            </li-second>
+
+            <li-third class="dropdown-third">
+                <a href="javascript:void(0)" class="drop-btn-third">Sobre Nós</a>
+                <div class="dropdown-content-third">
+                    <a href="gestao.html">Chavenses</a>
+                    <a href="gestao.html">LAPR1</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ISEP</a>
+                </div>
+            </li-third>
+
         </div>
     </ul>
 
 
 <div class="content-grid">
-    <p class="content-text-2-columns">Caticum é um site que deseja procurar fornecer serviços bla bla bla bla bla
-        bla bla</p>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
-    <i>💩💩</i>
+    <img src="images/Instrumentos.png" alt="" class="grid-image">
+    <p class="main-description">A Canticum é uma aplicação que serve para melhorar e simplificar a forma como se gere uma banda. Para isso disponibilizamos várias ferramentas úteis para as tarefas do dia-a-dia na gerência de um grupo musical. Assim deixa de focar todas as energias na parte da gestão e passa a focar-se mais no que interessa, a MÚSICA.</p>
 </div>
 
 <div id="contacts" class="footnote-grid">
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
-    <i>😂😂</i>
+    <p style="grid-area: 4 / 1 / 5 / 5">Website realizado para o projeto do primeiro semestre de LAPR1-ISEP</p>
+    <pre style="grid-area: 2 / 4 / 4 / 4">1221251_David Gonçalves
+1221250_Carlos Pereira
+1221257_Rui Silva
+1221253_Eduardo Casas
+    </pre>
 </div>
+
 
 
 
