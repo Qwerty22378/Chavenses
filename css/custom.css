@@ -102,3 +102,80 @@ color: var(--bs-secondary)
 #plataforma a.destaque .img-container img {
   max-height: 160px;
 }
+
+
+/* ----------- navbar dropdown ----------- */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown > a, .nav-dropdown > button {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-dropdown > a:before, .nav-dropdown > button:before {
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+.nav-dropdown ul {
+  position: absolute;
+  top: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,.175);
+}
+
+.nav-dropdown:hover ul {
+  display: block;
+  top:2.7em;
+}
+
+.nav-link nav-dropdown:hover{
+  border-bottom: solid 4px var(--bs-secondary);
+  color: var(--bs-secondary)
+}
+
+.nav-dropdown ul li {
+  display: block;
+  padding: 6px 20px;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.nav-dropdown ul li:hover{
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.nav-dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: black
+}
+
+.nav-dropdown .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  font-size: 1px;
+  padding: 0;
+}
+
+.nav-link .nav-dropdown ul li:hover {
+border-bottom: solid 4px var(--bs-secondary);
+color: var(--bs-secondary)
+}
