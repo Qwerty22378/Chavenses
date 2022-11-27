@@ -5,9 +5,14 @@ html {
 }
 
 #header {
+display:box;
   width: 100%;
-  background-color: transparent;
+  background-color: white;
   transition: background ease-out 0.2s;
+  position:fixed;
+  top:0px;
+  z-index:1;
+  box-shadow: 0 2px 5px -2px var(--bs-secondary);
 }
 
 #header .active {
@@ -103,6 +108,47 @@ color: var(--bs-secondary)
   max-height: 160px;
 }
 
+#contactos ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contactos ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contactos{
+background-color: var(--bs-primary-light);
+}
+
+#contactos ul li:first-child {
+  margin-left: 0;
+}
+
+#contactos ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contactos ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+#contactos ul li img {
+  max-height: 20px;
+}
+
 
 /* ----------- navbar dropdown ----------- */
 .nav-dropdown {
@@ -175,7 +221,7 @@ color: var(--bs-secondary)
   padding: 0;
 }
 
-.nav-link .nav-dropdown ul li:hover {
+.nav-dropdown:hover #nav-gestao{
 border-bottom: solid 4px var(--bs-secondary);
 color: var(--bs-secondary)
 }
