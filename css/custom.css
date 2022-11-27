@@ -12,7 +12,7 @@ display:box;
   position:fixed;
   top:0px;
   z-index:1;
-  box-shadow: 0 2px 5px -2px var(--bs-secondary);
+  box-shadow: 0 2px 5px -2px var(--bs-primary);
 }
 
 #header .active {
