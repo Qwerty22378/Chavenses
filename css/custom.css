@@ -227,3 +227,10 @@ background-color: var(--bs-primary-light);
 border-bottom: solid 4px var(--bs-secondary);
 color: var(--bs-secondary)
 }
+
+#depoimentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
