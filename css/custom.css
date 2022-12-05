@@ -234,3 +234,8 @@ color: var(--bs-secondary)
   justify-content: center;
   height: 200px;
 }
+
+/* ----------- Sobre nos ----------- */
+.sobre-nos-lista {
+font-size:24px;
+}
