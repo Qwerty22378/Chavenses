@@ -306,7 +306,7 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 14%;
+  padding-top: 30%;
   height:30%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
@@ -403,7 +403,7 @@ ol, li {
 .carousel::after {
   position: absolute;
   top: 0;
-  margin-top: 6.5%;
+  margin-top: 13%;
   width: 2.5rem;
   height: 2.5rem;
   transform: translateY(-50%);
